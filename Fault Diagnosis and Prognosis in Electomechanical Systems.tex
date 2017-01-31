@@ -18,8 +18,17 @@ The energy transition is one of the most important societal challenge of the nex
 
 
 %Introduction
-Fault detection and diagnosis
+
+Faults diagnosis and prognosis in electromecanical systems is of paramount importance in order to improve rotating machines reliability and availability and reduce operating and maintenance costs. Condition based maintenance of rotating machines in industrial applications is based on performance and physical parameters monitoring (vibration, currents, temperature, lubrication). The existing technologies for electrical machines condition monitoring are vibration monitoring, torque monitoring, temperature monitoring, and oil/debris monitoring. These technologies require additional sensors and specific data acquisition devices to be implemented. Prognosis is based on the estimation of the remaining operational life and the probability of failure of the system based on the acquired condition monitoring data. An increasing number of publications have focused on rotating machinery diagnostic and prognostic in the last few years. Many previous works have proposed to use advanced signal processing techniques as a medium for faults detection and diagnosis. Most of these techniques are based on power spectral density (PSD) estimation.  These techniques have been mostly demonstrated for induction machine fault detection and diagnosis [1-3]. These signal processing techniques allow extracting useful indicators of the fault from a raw data. Moreover, the decision making have received much attention from researchers and industry. The proposed approaches can be classified in two main categories which are: detection theory and artificial intelligence (AI) techniques. The detection theory is mainly based on signal parameters estimation and hypothesis testing (decide whatever the machine is operating correctly or something abnormal is happening) [3]. The AI techniques include Support Vector Machines (SVM), Artificial Neural Networks (ANN), fuzzy logic, and genetic algorithms. The main advantage of such techniques is their ability to automatically distinguish faulty cases from healthy case for different operating conditions and various faults severity. 
+
 % Travaux
+The IRDL Laboratory and the Energy and Electromechanical Systems (EES) team of ISEN Brest collaboration has allowed developing innovative faults diagnosis techniques in induction machines through stator currents analysis [1-4].  The main objective of this PhD project is to propose faults diagnosis and prognosis techniques of an electromechanical system. These techniques should enhance the reliability and improve the useful life of the overall system, especially in marine renewable energy systems such marine current turbines and offshore wind turbines.
+[1]	V. Choqueuse, M.E.H. Benbouzid, Y. Amirat and S. Turri, “Diagnosis of three-phase electrical machines using multidimensional demodulation techniques,” IEEE Transactions on Industrial Electronics, vol. 59, n°4, pp. 2014-2023, April 2012.
+[2]	Y. Trachi, E. Elbouchikhi, V. Choqueuse, and M. E. H. Benbouzid, “A Novel Induction Machine Fault Detector Based on Hypothesis Testing,” IEEE Transactions on Industry Applications, vol. pp, October 17, 2016. 
+[3]	Y. Trachi, E. Elbouchikhi, V. Choqueuse, and M. E. H. Benbouzid, “Induction machines fault detection based on subspace spectral estimation,” IEEE Transactions on Industrial Electronics, vol. 63, no. 9, September 2016. 
+[4]	E. Elbouchikhi, V. Choqueuse and M.E.H. Benbouzid, "Induction Machine Bearing Faults Detection based on a Multi-Dimensional MUSIC Algorithm and a Maximum Likelihood Estimation," ISA Transactions, Volume: 36, pp. 413–424 July 2016. 
+=======
+
 
 %Limitations
 Despite its statistical performance, Parametric approaches for fault detection have several drawbacks. First, the statistical performance drastically degrade in presence of model mismatch (wrong number of spectral components, non-gaussian noise, presence of additional frequency componenents). Then, these database-free techniques are suboptimal when a signal database is available since they do not exploit the extra information provided by any previous recorded measurements.
@@ -35,34 +44,12 @@ One objective of this thesis is to investigate the use of advanced signal proces
 \end{itemize}
 
 
-@article{malioutov2005sparse,
-  title={A sparse signal reconstruction perspective for source localization with sensor arrays},
-  author={Malioutov, Dmitry and {\c{C}}etin, M{\"u}jdat and Willsky, Alan S},
-  journal={IEEE transactions on signal processing},
-  volume={53},
-  number={8},
-  pages={3010--3022},
-  year={2005},
-  publisher={IEEE
-  
- }
+
+%Limitations
+Despite its statistical performance, Para
 
 
-@article{yang2016sparse,
-  title={Sparse Methods for Direction-of-Arrival Estimation},
-  author={Yang, Zai and Li, Jian and Stoica, Petre and Xie, Lihua},
-  journal={arXiv preprint arXiv:1609.09596},
-  year={2016}
-}
-
-@inproceedings{stoica2014gridless,
-  title={Gridless compressive-sensing methods for frequency estimation: Points of tangency and links to basics},
-  author={Stoica, Petre and Tangy, Gongguo and Yangz, Zai and Zachariah, Dave},
-  booktitle={Signal Processing Conference (EUSIPCO), 2014 Proceedings of the 22nd European},
-  pages={1831--1835},
-  year={2014},
-  organization={IEEE}
-}
+%Technique
 
    
 \end{document}
