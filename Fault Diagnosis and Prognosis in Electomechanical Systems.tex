@@ -22,22 +22,16 @@ Fault detection and diagnosis
 % Travaux
 
 %Limitations
-Despite its statistical performance, Parametric approaches for fault detection have several drawbacks. First, the statistical performance of these techniques drastically degrade in presence of model mismatch (wrong number of spectral components, non-gaussian noise, presence of additional frequency componenents). Then, these database-free techniques are suboptimal when a signal database is available since they do not exploit the extra information provided by any previous recorded measurements.
+Despite its statistical performance, Parametric approaches for fault detection have several drawbacks. First, the statistical performance drastically degrade in presence of model mismatch (wrong number of spectral components, non-gaussian noise, presence of additional frequency componenents). Then, these database-free techniques are suboptimal when a signal database is available since they do not exploit the extra information provided by any previous recorded measurements.
 Last but not least, these techniques only focus on the estimation-detection steps. In particular, they does not provide any information about the remaining lifespan of the entire mechanical system and do not provide any recommendation for the maintenance plannification.
 
 %Technique
-The objective of this thesis is to investigate the use of new advanced signal processing and patter recognition techniques for the diagnosis and prognosis of electromechanical systems. Specifically, we propose the following investigations.
-
+One objective of this thesis is to investigate the use of advanced signal processing and patter recognition techniques for the diagnosis and prognosis of electromechanical systems. Specifically, several research area can be investigated.
 
 \begin{itemize}
-\item Sparse representation for spectral analysis. Conventional techniques for spectral analysis (or Direction of Arrivals are based on non-parametric (periodogram) or parametric approaches (maximum likelihood, subspace techniques). While non-parametric approaches suffer from low statistical performances, the parametric approaches are highly sensitive to model mismatch. To overcome these limitations, several authors have recently proposed to use semi-parametric techniques based on sparse representations. Sparse representations exploit the fact the signal spectrum contains a large number of null components. In the context of system diagnosis, it will be interesting to investigate the advantages of these new representations over conventional spectral estimation approaches. 
+\item Sparse representation for spectral analysis. Conventional techniques for spectral analysis (or Direction of Arrivals) include non-parametric (periodogram) and parametric approaches (Maximum Likelihood, subspace techniques). While non-parametric approaches suffer from low statistical performances, the parametric approaches are highly sensitive to model mismatch. To overcome these limitations, several authors have recently proposed to use semi-parametric techniques based on sparse representations. Technically, sparse representations exploit the fact the signal spectrum contains a large number of null components. These techniques offers better statistical performance than non-parametric approach while preserving high robustness. In the context of system diagnosis, it will be interesting to investigate the advantages of this cutting edge technique over conventional approaches with electrical and vibrations signals. 
 
-
-\item Deep Learning for Diagnosis and Prognostic. When a database is available, the diagnosis and the prognostic are usually performed by pattern recognition approaches (such as Neural Networks, Support Vector Machine). The performance of these approaches critically depend on the feature extraction stage. In particular, a wrong features choice will necessary leads to wrong diagnosis. To avoid th, recent architecture based on deep neural networks have gain 
-
-Deep learning allows computational models that are composed of multiple processing layers to learn representations of data with multiple levels of abstraction
-
-
+\item Deep Learning for Diagnosis and Prognostic. When a database is available, the diagnosis and the prognostic are usually performed using pattern recognition approaches such as Neural Networks or Support Vector Machines. However, it is well known that the performance of these techniques critically depend on the feature extraction stage. In practice, a good choice of features is a difficult engineering task and requires appropritate skills in signal processing and statistics. Recently, new neural architecture based on Deep Learning have proposed to overcome this problem by directly sending the raw signal to the deep network inputs. In this context, it will be interesting to investigate the benefit of this new approach for the diagnosis and prognosis of the system states.
 \end{itemize}
 
 
