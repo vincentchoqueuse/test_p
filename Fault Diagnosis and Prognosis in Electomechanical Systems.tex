@@ -22,10 +22,53 @@ Fault detection and diagnosis
 % Travaux
 
 %Limitations
-Despite its statistical performance, Para
-
+Despite its statistical performance, Parametric approaches for fault detection have several drawbacks. First, the statistical performance of these techniques drastically degrade in presence of model mismatch (wrong number of spectral components, non-gaussian noise, presence of additional frequency componenents). Then, these database-free techniques are suboptimal when a signal database is available since they do not exploit the extra information provided by any previous recorded measurements.
+Last but not least, these techniques only focus on the estimation-detection steps. In particular, they does not provide any information about the remaining lifespan of the entire mechanical system and do not provide any recommendation for the maintenance plannification.
 
 %Technique
+The objective of this thesis is to investigate the use of new advanced signal processing and patter recognition techniques for the diagnosis and prognosis of electromechanical systems. Specifically, we propose the following investigations.
+
+
+\begin{itemize}
+\item Sparse representation for spectral analysis. Conventional techniques for spectral analysis (or Direction of Arrivals are based on non-parametric (periodogram) or parametric approaches (maximum likelihood, subspace techniques). While non-parametric approaches suffer from low statistical performances, the parametric approaches are highly sensitive to model mismatch. To overcome these limitations, several authors have recently proposed to use semi-parametric techniques based on sparse representations. Sparse representations exploit the fact the signal spectrum contains a large number of null components. In the context of system diagnosis, it will be interesting to investigate the advantages of these new representations over conventional spectral estimation approaches. 
+
+
+\item Deep Learning for Diagnosis and Prognostic. When a database is available, the diagnosis and the prognostic are usually performed by pattern recognition approaches (such as Neural Networks, Support Vector Machine). The performance of these approaches critically depend on the feature extraction stage. In particular, a wrong features choice will necessary leads to wrong diagnosis. To avoid th, recent architecture based on deep neural networks have gain 
+
+Deep learning allows computational models that are composed of multiple processing layers to learn representations of data with multiple levels of abstraction
+
+
+\end{itemize}
+
+
+@article{malioutov2005sparse,
+  title={A sparse signal reconstruction perspective for source localization with sensor arrays},
+  author={Malioutov, Dmitry and {\c{C}}etin, M{\"u}jdat and Willsky, Alan S},
+  journal={IEEE transactions on signal processing},
+  volume={53},
+  number={8},
+  pages={3010--3022},
+  year={2005},
+  publisher={IEEE
+  
+ }
+
+
+@article{yang2016sparse,
+  title={Sparse Methods for Direction-of-Arrival Estimation},
+  author={Yang, Zai and Li, Jian and Stoica, Petre and Xie, Lihua},
+  journal={arXiv preprint arXiv:1609.09596},
+  year={2016}
+}
+
+@inproceedings{stoica2014gridless,
+  title={Gridless compressive-sensing methods for frequency estimation: Points of tangency and links to basics},
+  author={Stoica, Petre and Tangy, Gongguo and Yangz, Zai and Zachariah, Dave},
+  booktitle={Signal Processing Conference (EUSIPCO), 2014 Proceedings of the 22nd European},
+  pages={1831--1835},
+  year={2014},
+  organization={IEEE}
+}
 
    
 \end{document}
