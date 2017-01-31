@@ -18,6 +18,7 @@ The energy transition is one of the most important societal challenge of the nex
 
 
 %Introduction
+
 Faults diagnosis and prognosis in electromecanical systems is of paramount importance in order to improve rotating machines reliability and availability and reduce operating and maintenance costs. Condition based maintenance of rotating machines in industrial applications is based on performance and physical parameters monitoring (vibration, currents, temperature, lubrication). The existing technologies for electrical machines condition monitoring are vibration monitoring, torque monitoring, temperature monitoring, and oil/debris monitoring. These technologies require additional sensors and specific data acquisition devices to be implemented. Prognosis is based on the estimation of the remaining operational life and the probability of failure of the system based on the acquired condition monitoring data. An increasing number of publications have focused on rotating machinery diagnostic and prognostic in the last few years. Many previous works have proposed to use advanced signal processing techniques as a medium for faults detection and diagnosis. Most of these techniques are based on power spectral density (PSD) estimation.  These techniques have been mostly demonstrated for induction machine fault detection and diagnosis [1-3]. These signal processing techniques allow extracting useful indicators of the fault from a raw data. Moreover, the decision making have received much attention from researchers and industry. The proposed approaches can be classified in two main categories which are: detection theory and artificial intelligence (AI) techniques. The detection theory is mainly based on signal parameters estimation and hypothesis testing (decide whatever the machine is operating correctly or something abnormal is happening) [3]. The AI techniques include Support Vector Machines (SVM), Artificial Neural Networks (ANN), fuzzy logic, and genetic algorithms. The main advantage of such techniques is their ability to automatically distinguish faulty cases from healthy case for different operating conditions and various faults severity. 
 
 % Travaux
@@ -26,6 +27,21 @@ The IRDL Laboratory and the Energy and Electromechanical Systems (EES) team of I
 [2]	Y. Trachi, E. Elbouchikhi, V. Choqueuse, and M. E. H. Benbouzid, “A Novel Induction Machine Fault Detector Based on Hypothesis Testing,” IEEE Transactions on Industry Applications, vol. pp, October 17, 2016. 
 [3]	Y. Trachi, E. Elbouchikhi, V. Choqueuse, and M. E. H. Benbouzid, “Induction machines fault detection based on subspace spectral estimation,” IEEE Transactions on Industrial Electronics, vol. 63, no. 9, September 2016. 
 [4]	E. Elbouchikhi, V. Choqueuse and M.E.H. Benbouzid, "Induction Machine Bearing Faults Detection based on a Multi-Dimensional MUSIC Algorithm and a Maximum Likelihood Estimation," ISA Transactions, Volume: 36, pp. 413–424 July 2016. 
+=======
+
+
+%Limitations
+Despite its statistical performance, Parametric approaches for fault detection have several drawbacks. First, the statistical performance drastically degrade in presence of model mismatch (wrong number of spectral components, non-gaussian noise, presence of additional frequency componenents). Then, these database-free techniques are suboptimal when a signal database is available since they do not exploit the extra information provided by any previous recorded measurements.
+Last but not least, these techniques only focus on the estimation-detection steps. In particular, they does not provide any information about the remaining lifespan of the entire mechanical system and do not provide any recommendation for the maintenance plannification.
+
+%Technique
+One objective of this thesis is to investigate the use of advanced signal processing and patter recognition techniques for the diagnosis and prognosis of electromechanical systems. Specifically, several research area can be investigated.
+
+\begin{itemize}
+\item Sparse representation for spectral analysis. Conventional techniques for spectral analysis (or Direction of Arrivals) include non-parametric (periodogram) and parametric approaches (Maximum Likelihood, subspace techniques). While non-parametric approaches suffer from low statistical performances, the parametric approaches are highly sensitive to model mismatch. To overcome these limitations, several authors have recently proposed to use semi-parametric techniques based on sparse representations. Technically, sparse representations exploit the fact the signal spectrum contains a large number of null components. These techniques offers better statistical performance than non-parametric approach while preserving high robustness. In the context of system diagnosis, it will be interesting to investigate the advantages of this cutting edge technique over conventional approaches with electrical and vibrations signals. 
+
+\item Deep Learning for Diagnosis and Prognostic. When a database is available, the diagnosis and the prognostic are usually performed using pattern recognition approaches such as Neural Networks or Support Vector Machines. However, it is well known that the performance of these techniques critically depend on the feature extraction stage. In practice, a good choice of features is a difficult engineering task and requires appropritate skills in signal processing and statistics. Recently, new neural architecture based on Deep Learning have proposed to overcome this problem by directly sending the raw signal to the deep network inputs. In this context, it will be interesting to investigate the benefit of this new approach for the diagnosis and prognosis of the system states.
+\end{itemize}
 
 
 
